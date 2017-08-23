@@ -13,6 +13,7 @@ class StartComponent extends React.Component {
     return (
         <article className="bodyText">
             <img className="startImg" src="./app/img/car.jpg" alt="Bilden kan inte visas"/>
+            sdgöflknjdasbvgfjdzö.sgfj
             <p>
                 På Norrstrand hittar ni en av Karlstads äldsta Frisörsalonger.<br/>
                 Jag hjälper dig med det mesta inom hårvård. Klippning, färgning, slingor och permanent m.m <br/>
