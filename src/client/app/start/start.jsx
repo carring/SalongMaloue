@@ -1,4 +1,5 @@
 import React from 'react';
+import Car from './../img/car.jpg';
 
 require('./../scss/main.scss');
 require('./start.scss');
@@ -12,8 +13,7 @@ class StartComponent extends React.Component {
   render() {
     return (
         <article className="bodyText">
-            <img className="startImg" src="./app/img/car.jpg" alt="Bilden kan inte visas"/>
-            sdgöflknjdasbvgfjdzö.sgfj
+            <img className="startImg" src={Car} alt="Bilden kan inte visas"/>
             <p>
                 På Norrstrand hittar ni en av Karlstads äldsta Frisörsalonger.<br/>
                 Jag hjälper dig med det mesta inom hårvård. Klippning, färgning, slingor och permanent m.m <br/>

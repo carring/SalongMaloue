@@ -2,6 +2,7 @@ import React from 'react';
 import StartComponent from './../start/start.jsx';
 import PriceComponent from './../price/price.jsx';
 import GalleryComponent from './../gallery/gallery.jsx';
+import Cover from './../img/cover.jpg';
 
 require('./../scss/main.scss');
 require('./container.scss');
@@ -22,7 +23,7 @@ class ContainerComponent extends React.Component {
     return (
       <div className="content">
         <header className="headerContainer">
-          <img className="headerImg" src="./app/img/cover.jpg" alt="Bilden kan inte visas"/>
+          <img className="headerImg" src={Cover} alt="Bilden kan inte visas"/>
           <h1>Salong Maloue</h1>
         </header>
         <nav>
