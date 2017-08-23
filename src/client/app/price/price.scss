@@ -1,0 +1,21 @@
+@import './../scss/base.scss';
+
+.bodyText{
+    width: 100%;
+}
+
+table{
+    width: 80%;
+    tr{
+        height: 2em;
+    }
+    td:first-child{
+        width: 40%;
+    }
+    td:nth-child(n + 2){
+        width: 20%;
+    }
+    .bold{
+        font-weight: bold;
+    }
+}

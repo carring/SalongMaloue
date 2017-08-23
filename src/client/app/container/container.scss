@@ -1,0 +1,80 @@
+@import './../scss/base.scss';
+
+.content{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80%;
+    min-height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    .headerContainer{
+        height: 250px;
+        overflow: hidden;
+        .headerImg{
+            width: 100%;
+            position: relative;
+            //top: -200px;
+        }
+        h1{
+            margin: 0;
+            position: absolute;
+            top: 185px;
+            left: 25px;
+            font-size: 40px;
+            color: $darkGrey;
+        }
+    }
+
+    nav{
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: $darkBeige;
+            
+        }
+        li {
+            float: left;
+            display: block;
+            padding: 20px 30px;
+            font-size: 16px;
+            @include hoverDark($darkBeige);
+            &:last-child{
+                float: right;
+            }
+            a{
+                text-decoration: none;
+                &:link, &:active, &:hover, &:visited{
+                    color: black;
+                }
+            }
+        }
+        .active{
+            background-color: darken($darkBeige, 5%);
+        }
+    }
+
+    footer{
+        display: inline-block;
+        box-sizing: border-box;
+        bottom: 0;
+        width: 100%;
+        padding: 20px 60px 10px 60px;
+        line-height: 30px;
+        background-color: $darkBeige;
+        display: flex;
+        justify-content: space-between;
+        .footerIcon{
+            width: 30px;
+        }
+    }
+    
+    .bodyTextContainer{
+        flex: 1;
+        padding: 60px;
+    }
+}
+

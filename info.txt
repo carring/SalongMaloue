@@ -1,0 +1,5 @@
+För att bundla:
+npm run build
+
+För att bundla automatiskt:
+npm run dev

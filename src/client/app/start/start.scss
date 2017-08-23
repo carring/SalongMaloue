@@ -1,0 +1,14 @@
+@import './../scss/base.scss';
+
+.startImg{
+    width: 30%;
+    float: right;
+    margin: 32px -40px 0 32px;
+}
+
+.bodyText{
+    float: left;
+    p > span{
+        font-weight: bold;
+    }
+}

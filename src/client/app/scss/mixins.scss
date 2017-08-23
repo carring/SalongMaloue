@@ -1,0 +1,7 @@
+@mixin hoverDark($color){
+    background-color: $color;
+    cursor: pointer;
+    &:hover{
+        background-color: darken($color, 5%);
+    }
+}
