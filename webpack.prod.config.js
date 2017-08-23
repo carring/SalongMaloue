@@ -1,19 +1,18 @@
 const path = require('path')
 const webpack = require('webpack')
+var BUILD_DIR = path.resolve(__dirname, '/public');
+var APP_DIR = path.resolve(__dirname, 'src/client/app');
 
 module.exports = {
   devtool: 'source-map',
 
-  entry: [
-    './src/client/app/index.jsx'
-  ],
+  entry: APP_DIR + '/index.jsx',
 
   output: {
-    path: path.join(__dirname, 'public'),
-    filename: 'bundle.js',
-    publicPath: '/public/'
+    path: BUILD_DIR,
+    filename: 'bundle.js'
   },
-
+  
   plugins: [
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.UglifyJsPlugin({
